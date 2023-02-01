@@ -1,2 +1,11 @@
-# Study
-Study Projects
+
+# Study Projects
+
+Simple projects made to study
+
+
+## Languages used
+
+- **Python**
+
+
