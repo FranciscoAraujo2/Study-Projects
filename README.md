@@ -8,5 +8,6 @@ Simple projects made to study
 
 - **Python**
 - **C#**
+- **Js**
 
 
