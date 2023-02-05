@@ -9,6 +9,11 @@ Simple projects made to study
 - **Python**
 - **C#**
 - **Js**
+- **Html**
+- **Css**
 
 ## Framewroks used
+
+- **Python** - **None**
+- **Js** - **None**
 
