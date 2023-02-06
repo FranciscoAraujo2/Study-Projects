@@ -2,8 +2,11 @@ let RunningTotal = 0;
 let Buffer = "0";
 let PreviousOperator;
 
+// Get the screen element from the DOM
 const screen = document.querySelector('.screen')
 
+
+// A function that gets called when a button is clicked
 function ButtonClick(value){
     if(isNaN(value)){
         HandleSymbol(value);
@@ -13,6 +16,7 @@ function ButtonClick(value){
     screen.innerText = Buffer;
 }
 
+// A function that handles the input of numbers
 function HandleNumber(value){
     if(Buffer === "0"){
         Buffer = value;
@@ -21,6 +25,7 @@ function HandleNumber(value){
     }
 }
 
+// A function that handles the input of symbols
 function HandleSymbol(value){
     switch (value) {
         case 'C':
@@ -53,6 +58,7 @@ function HandleSymbol(value){
     }
 }
 
+// A function to handle the input of symbols
 function HandleMath(value){
     const intBuffer = parseInt(Buffer);
     if (RunningTotal === 0) {
@@ -64,6 +70,7 @@ function HandleMath(value){
     Buffer = "0";
 }
 
+// A function to perform the calculation based on the previous operator
 function FlushOperation(intBuffer){
     if (PreviousOperator === '+') {
         RunningTotal += intBuffer;
@@ -76,6 +83,7 @@ function FlushOperation(intBuffer){
     }
 }
 
+// A function to initialize the calculator
 function init(){
     document.querySelector('.calc-buttons').
     addEventListener('click', function(event){
